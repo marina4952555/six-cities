@@ -43,20 +43,24 @@
       "lng": 6.787428
     }
   ],
-  "offersList": [
+  "offerList": [
     {
       "id": "jknsd63498uwfhg3e87yd3",
       "perrentId": "ownc62ndus92bsyhc883",
       "hostId": "73bf89webnds83n",
       "lat": 52.3909553943508,
       "lng": 4.85309666406198,
-      "prace": "120",
+      "price": 120,
       "name": "Beautiful luxurious apartment at great location",
       "isPremium": true,
       "offerCover": "img/apartment-01.jpg",
       "type": "Apartment",
       "rating": "4,8",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -80,13 +84,17 @@
       "hostId": "7fhdsg3kcnd0",
       "lat": 52.369553943508,
       "lng": 4.85309666406198,
-      "prace": "90",
+      "price": 90,
       "name": "Wood and stone place",
       "isPremium": true,
       "offerCover": "img/apartment-02.jpg",
       "type": "Private room",
       "rating": "4,4",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -110,13 +118,17 @@
       "hostId": "73bf89webnds83n",
       "lat": 52.3909553943508,
       "lng": 4.929309666406198,
-      "prace": "150",
+      "price": 150,
       "name": "Canal View Prinsengracht",
       "isPremium": false,
       "offerCover": "img/apartment-03.jpg",
       "type": "Apartment",
       "rating": "4.7",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -140,13 +152,17 @@
       "hostId": "cndf84rnc7eh4",
       "lat": 52.3809553943508,
       "lng": 4.939309666406198,
-      "prace": "70",
+      "price": 70,
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": false,
       "offerCover": "img/apartment-01.jpg",
       "type": "Apartment",
       "rating": "5",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -170,13 +186,17 @@
       "hostId": "sdhui4r87ydwe",
       "lat": 48.880421513358115,
       "lng": 2.326435637176668,
-      "prace": "100",
+      "price": 100,
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": true,
       "offerCover": "img/apartment-01.jpg",
       "type": "Apartment",
       "rating": "4.8",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -198,15 +218,19 @@
       "id": "",
       "perrentId": "5hdkd9vnsc7dsncjc7",
       "hostId": "73bf89webnds83n",
-      "lat": 48.880421513358145,
+      "lat": 48.880421513358144,
       "lng": 2.326435637176768,
-      "prace": "135",
+      "price": 135,
       "name": "Canal View Prinsengracht",
       "isPremium": false,
       "offerCover": "img/apartment-02.jpg",
       "type": "Apartment",
       "rating": "4,6",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -230,13 +254,17 @@
       "hostId": "7fhdsg3kcnd0",
       "lat": 50.930779,
       "lng": 6.938399,
-      "prace": "95",
+      "price": 95,
       "name": "Beautiful luxurious apartment at great location",
       "isPremium": false,
       "offerCover": "img/apartment-02.jpg",
       "type": "Private room",
       "rating": "4.1",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -260,13 +288,17 @@
       "hostId": "sdhui4r87ydwe",
       "lat": 50.854283,
       "lng": 4.352131,
-      "prace": "180",
+      "price": 180,
       "name": "Canal View Prinsengracht",
       "isPremium": true,
       "offerCover": "img/apartment-03.jpg",
       "type": "Private room",
       "rating": "4.2",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -290,13 +322,17 @@
       "hostId": "cndf84rnc7eh4",
       "lat": 50.854283,
       "lng": 4.352131,
-      "prace": "105",
+      "price": 105,
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": false,
       "offerCover": "img/apartment-03.jpg",
       "type": "Apartment",
       "rating": "4.3",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -320,13 +356,17 @@
       "hostId": "cdhbdcuhewdwu",
       "lat": 53.550688,
       "lng": 9.992895,
-      "prace": "165",
+      "price": 165,
       "name": "Beautiful luxurious apartment at great location",
       "isPremium": false,
       "offerCover": "img/apartment-01.jpg",
       "type": "Private room",
       "rating": "4.7",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -350,13 +390,17 @@
       "hostId": "cndf84rnc7eh4",
       "lat": 51.230569,
       "lng": 6.787428,
-      "prace": "110",
+      "price": 110,
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": true,
       "offerCover": "img/apartment-02.jpg",
       "type": "Apartment",
       "rating": "5",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -417,44 +461,58 @@
     {
       "id": "73bf89webnds83n",
       "name": "Angelina",
+      "email": "Angelina@site.site",
       "avatar": "img/avatar-angelina.jpg",
       "isPro": true
     },
     {
       "id": "7fhdsg3kcnd0",
       "name": "Marina",
+      "email": "Marina@site.site",
       "avatar": "img/avatar-angelina.jpg",
       "isPro": false
     },
     {
       "id": "cndf84rnc7eh4",
       "name": "Nikolay",
+      "email": "Nikolay@site.site",
       "avatar": "img/avatar-max.jpg",
       "isPro": false
     },
     {
       "id": "cdhbdcuhewdwu",
       "name": "Veronika",
+      "email": "Veronika@site.site",
       "avatar": "img/avatar-angelina.jpg",
       "isPro": true
     },
     {
       "id": "sdhui4r87ydwe",
       "name": "Max",
+      "email": "Max@site.site",
       "avatar": "img/avatar-max.jpg",
       "isPro": false
     },
     {
       "id": "efwghtjkiujh43",
       "name": "Vadim",
+      "email": "Vadim@site.site",
       "avatar": "img/avatar-angelina.jpg",
       "isPro": false
     },
     {
       "id": "3rfghy6543edfg",
       "name": "Alisa",
+      "email": "Alisa@site.site",
       "avatar": "img/avatar-max.jpg",
       "isPro": true
+    },
+    {
+      "name": "Marina Starodumova",
+      "email": "starodumovamarina5221@gmail.com",
+      "isPro": "false",
+      "avatar": "",
+      "id": "5ae5c952-8068-4189-877f-2d448a2ca1f4"
     }
   ]
 }

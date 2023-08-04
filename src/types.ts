@@ -6,7 +6,7 @@ export type OfferType = {
   lat: number;
   lng: number;
   premium: boolean;
-  prace: string;
+  price: number;
   name: string;
   type: string;
   rating: string;
@@ -34,12 +34,13 @@ export type LocationType = {
 };
 
 export type CurrentUserType = {
-  id: string;
+  email: string;
 };
 
 export type UserType = {
   id: string;
   name: string;
+  email: string;
   avatar: string;
   isPro: boolean;
 };

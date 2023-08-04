@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Outlet, Link } from 'react-router-dom';
-import { locationsList } from '../mocks/locations';
+import { useAppDispatch, useAppSelector } from '../redux/hooks';
+import { fetchInitialData } from '../redux/common/thunks';
+import { userLogout } from '../redux/currentUser/currentUserSlice';
 import {
   Header,
   HeaderUser,
@@ -11,40 +13,49 @@ import {
   HeaderUserButton,
   Logo,
 } from '../App.styled';
-import { currentUser } from '../mocks/currentUser';
-import { logo } from '../mocks/logo';
 
 const Layout = () => {
-  const userLogout = () => {
-    currentUser;
+  const handleChangeUser = () => {
+    dispatch(userLogout());
+    localStorage.removeItem('currentUser');
   };
+
+  const { currentUser, locationsListData } = useAppSelector((state) => ({
+    currentUser: state.currentUser.email,
+    locationsListData: state.location,
+  }));
+
+  console.log(currentUser);
+
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    dispatch(fetchInitialData());
+  }, [dispatch]);
+
   return (
     <>
       <Header>
         <HeaderWrapper>
-          <Link to={logo.link}>
-            <Logo
-              src={`../${logo.url}`}
-              width={logo.width}
-              height={logo.heaght}
-              alt={logo.alt}
-            />
+          <Link to='/'>
+            <Logo src={`../img/logo.svg'`} width='81' height='41' alt='logo' />
           </Link>
           {currentUser && (
             <HeaderUser>
-              <Link to='#'>Oliver.conner@gmail.com</Link>
-              <HeaderUserButton type='button' onClick={() => userLogout()}>
+              <Link to='#'>{currentUser}</Link>
+              <HeaderUserButton
+                type='button'
+                onClick={() => handleChangeUser()}
+              >
                 Sign out
               </HeaderUserButton>
             </HeaderUser>
           )}
-          {!currentUser && (
-            <HeaderUserButton type='button'>Sign in</HeaderUserButton>
-          )}
+          {!currentUser && <Link to='/authorization'>Sign in</Link>}
         </HeaderWrapper>
         <HeaderNav>
           <HeaderNavList>
-            {locationsList.map((lacation) => (
+            {locationsListData.map((lacation) => (
               <HeaderNavItem key={lacation.id}>
                 <Link to={`/city/${lacation.id}`}>{lacation.name}</Link>
               </HeaderNavItem>

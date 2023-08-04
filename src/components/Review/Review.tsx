@@ -1,13 +1,16 @@
 import React from 'react';
 import { ReviewType } from '../../types';
-import { usersList } from '../../mocks/users';
+import { useAppSelector } from '../../redux/hooks';
 
 interface Props {
   review: ReviewType;
 }
 
 function Review({ review }: Props) {
-  const reviewAutor = usersList.find((user) => user.id == review.autorId);
+  const { userListData } = useAppSelector((state) => ({
+    userListData: state.users,
+  }));
+  const reviewAutor = userListData.find((user) => user.id == review.autorId);
   return (
     <li className='reviews__item'>
       <div className='reviews__user user'>
@@ -25,7 +28,6 @@ function Review({ review }: Props) {
       <div className='reviews__info'>
         <div className='reviews__rating rating'>
           <div className='reviews__stars rating__stars'>
-            {/* <span style="width: 80%"></span> */}
             <span className='visually-hidden'>Rating {review.rating}</span>
           </div>
         </div>

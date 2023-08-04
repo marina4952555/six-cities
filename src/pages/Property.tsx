@@ -2,28 +2,38 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import AddReviews from '../components/AddReviews';
 import ReviewsList from '../components/ReviewsList';
-import { offersList } from '../mocks/offers';
-import { reviewsList } from '../mocks/reviews';
-import { usersList } from '../mocks/users';
 import Map from '../components/Map';
-import { locationsList } from '../mocks/locations';
+import { useAppSelector } from '../redux/hooks';
 
 const Property = () => {
+  const {
+    currentUser,
+    usersListData,
+    locationsListData,
+    offerListData,
+    reviewsListData,
+  } = useAppSelector((state) => ({
+    currentUser: state.currentUser,
+    usersListData: state.users,
+    locationsListData: state.location,
+    offerListData: state.offer,
+    reviewsListData: state.review,
+  }));
   const params = useParams<{ id: string }>();
 
-  const offer = offersList.find((offer) => offer.id === params.id);
+  const offer = offerListData.find((offer) => offer.id === params.id);
 
   if (!offer) {
     return null;
   }
 
-  const currentReviewsList = reviewsList.filter(
+  const currentReviewsList = reviewsListData.filter(
     (review) => review.perrentId == offer.id,
   );
 
-  const currentHost = usersList.find((user) => user.id === offer.hostId);
+  const currentHost = usersListData.find((user) => user.id === offer.hostId);
 
-  const currentCity = locationsList.find(
+  const currentCity = locationsListData.find(
     (location) => location.id === offer.perrentId,
   );
   return (
@@ -77,7 +87,7 @@ const Property = () => {
               ))}
             </ul>
             <div className='property__price'>
-              <b className='property__price-value'>&euro;{offer.prace}</b>
+              <b className='property__price-value'>&euro;{offer.price}</b>
               <span className='property__price-text'>&nbsp;night</span>
             </div>
             <div className='property__inside'>
@@ -122,7 +132,7 @@ const Property = () => {
           </div>
         </div>
         <section className='property__map map'>
-          {currentCity && <Map city={currentCity} points={offersList} />}
+          {currentCity && <Map city={currentCity} points={offerListData} />}
         </section>
       </section>
       <div className='container'>

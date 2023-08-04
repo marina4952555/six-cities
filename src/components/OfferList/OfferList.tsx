@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { offersList } from '../../mocks/offers';
 import Offer from '../Offer/Offer';
 import { OfferType } from '../../types';
 import { OfferListStyle } from './OfferList.styled';
+import { useAppSelector } from '../../redux/hooks';
 
 interface Props {
   currentOfferList: OfferType[];
@@ -11,8 +11,12 @@ interface Props {
 function OfferList({ currentOfferList }: Props) {
   const [currentOffer, setCurrentOffer] = useState<OfferType | null>(null);
 
+  const { offerListData } = useAppSelector((state) => ({
+    offerListData: state.offer,
+  }));
+
   const handleAddCurrentOffer = (index: string) => {
-    const currentOffer = offersList.find((offer) => offer.id == index);
+    const currentOffer = offerListData.find((offer) => offer.id == index);
 
     if (currentOffer) {
       setCurrentOffer(currentOffer);

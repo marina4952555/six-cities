@@ -53,7 +53,7 @@ function Map({ city, points }: MapProps) {
     }
   }, [map, points, selectedPoint]);
 
-  return <div style={{ height: '500px' }} ref={mapRef} />;
+  return <div style={{ height: '800px' }} ref={mapRef} />;
 }
 
 export default Map;
