@@ -10,6 +10,7 @@ interface IFormInputs {
   email: string;
   avatar: string;
   isPro: boolean;
+  favoritesOfferList: string[];
 }
 
 const Registration = () => {

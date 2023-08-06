@@ -56,3 +56,8 @@ export const Main = styled.main`
 export const HeaderUserButton = styled.button`
   font-size: 16px;
 `;
+
+export const ErrorText = styled.button`
+  font-size: 12px;
+  color: red;
+`;

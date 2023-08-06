@@ -3,6 +3,7 @@ export type OfferType = {
   perrentId: string;
   hostId: string;
   offerCover: string;
+  offerPhotos: string[];
   lat: number;
   lng: number;
   premium: boolean;
@@ -43,6 +44,7 @@ export type UserType = {
   email: string;
   avatar: string;
   isPro: boolean;
+  favoritesOfferList: string[];
 };
 
 export type LogoType = {
@@ -51,9 +53,4 @@ export type LogoType = {
   alt: string;
   width: string;
   heaght: string;
-};
-
-export type FavoritesListType = {
-  id: string;
-  offerIdList: string[];
 };

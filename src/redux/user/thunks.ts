@@ -27,6 +27,7 @@ export const userPresence = createAsyncThunk(
           isPro: user.isPro,
           avatar: '',
           id: uuidv4(),
+          favoritesOfferList: [],
         };
 
         await axios.post(`${baseUrl}/usersList`, newUser);
@@ -36,5 +37,37 @@ export const userPresence = createAsyncThunk(
     } catch (e) {
       console.log(e);
     }
+  },
+);
+
+export const removeFavorite = createAsyncThunk(
+  'removeFavorite',
+  async (user: UserType) => {
+    await axios.put(`${baseUrl}/usersList/${user.id}`, {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      avatar: user.avatar,
+      isPro: user.isPro,
+      favoritesOfferList: user.favoritesOfferList,
+    });
+
+    return user;
+  },
+);
+
+export const addFavorite = createAsyncThunk(
+  'addFavorite',
+  async (user: UserType) => {
+    await axios.put(`${baseUrl}/usersList/${user.id}`, {
+      id: user.id,
+      name: user.name,
+      email: user.email,
+      avatar: user.avatar,
+      isPro: user.isPro,
+      favoritesOfferList: user.favoritesOfferList,
+    });
+
+    return user;
   },
 );

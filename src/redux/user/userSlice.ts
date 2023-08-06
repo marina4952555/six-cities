@@ -3,6 +3,7 @@ import { UserType } from '../../types';
 import { fetchInitialData } from '../common/thunks';
 
 const initialState = [] as UserType[];
+import { addFavorite, removeFavorite } from './thunks';
 
 const userSlice = createSlice({
   name: 'users',
@@ -17,6 +18,24 @@ const userSlice = createSlice({
           return usersList;
         }
       }
+    });
+    builder.addCase(removeFavorite.fulfilled, (state, action) => {
+      return state.map((user) => {
+        if (user.id === action.payload.id) {
+          return action.payload;
+        }
+
+        return user;
+      });
+    });
+    builder.addCase(addFavorite.fulfilled, (state, action) => {
+      return state.map((user) => {
+        if (user.id === action.payload.id) {
+          return action.payload;
+        }
+
+        return user;
+      });
     });
   },
 });

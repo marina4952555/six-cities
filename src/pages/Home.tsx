@@ -1,10 +1,11 @@
 import React from 'react';
+import { Main } from '../App.styled';
 
 const Home = () => {
   return (
-    <main className='page__main page__main--index'>
+    <Main>
       <h1>Home Page</h1>
-    </main>
+    </Main>
   );
 };
 

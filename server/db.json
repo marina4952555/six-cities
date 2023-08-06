@@ -54,9 +54,20 @@
       "name": "Beautiful luxurious apartment at great location",
       "isPremium": true,
       "offerCover": "img/apartment-01.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Apartment",
       "rating": "4,8",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -84,9 +95,20 @@
       "name": "Wood and stone place",
       "isPremium": true,
       "offerCover": "img/apartment-02.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Private room",
       "rating": "4,4",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -114,9 +136,18 @@
       "name": "Canal View Prinsengracht",
       "isPremium": false,
       "offerCover": "img/apartment-03.jpg",
+      "offerPhotos": [
+        "img/apartment-03.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Apartment",
       "rating": "4.7",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -144,9 +175,19 @@
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": false,
       "offerCover": "img/apartment-01.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Apartment",
       "rating": "5",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -174,9 +215,19 @@
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": true,
       "offerCover": "img/apartment-01.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Apartment",
       "rating": "4.8",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -195,7 +246,7 @@
       ]
     },
     {
-      "id": "",
+      "id": "6874390iodejhfuyr7438",
       "perrentId": "5hdkd9vnsc7dsncjc7",
       "hostId": "73bf89webnds83n",
       "lat": 48.880421513358144,
@@ -204,9 +255,17 @@
       "name": "Canal View Prinsengracht",
       "isPremium": false,
       "offerCover": "img/apartment-02.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Apartment",
       "rating": "4,6",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -234,9 +293,20 @@
       "name": "Beautiful luxurious apartment at great location",
       "isPremium": false,
       "offerCover": "img/apartment-02.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Private room",
       "rating": "4.1",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -264,9 +334,19 @@
       "name": "Canal View Prinsengracht",
       "isPremium": true,
       "offerCover": "img/apartment-03.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Private room",
       "rating": "4.2",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -294,9 +374,19 @@
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": false,
       "offerCover": "img/apartment-03.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-04.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Apartment",
       "rating": "4.3",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -324,9 +414,19 @@
       "name": "Beautiful luxurious apartment at great location",
       "isPremium": false,
       "offerCover": "img/apartment-01.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-03.jpg",
+        "img/apartment-05.jpg"
+      ],
       "type": "Private room",
       "rating": "4.7",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -354,9 +454,18 @@
       "name": "Nice, cozy, warm big bed apartment",
       "isPremium": true,
       "offerCover": "img/apartment-02.jpg",
+      "offerPhotos": [
+        "img/apartment-01.jpg",
+        "img/apartment-02.jpg",
+        "img/apartment-04.jpg"
+      ],
       "type": "Apartment",
       "rating": "5",
-      "featuresList": ["Apartment", "3 Bedrooms", "Max 4 adults"],
+      "featuresList": [
+        "Apartment",
+        "3 Bedrooms",
+        "Max 4 adults"
+      ],
       "descriptionList": [
         "A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.",
         "An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful."
@@ -383,7 +492,7 @@
       "author": "Angelina",
       "text": "rgrthbg t trhtrh hht thththt thtththrth thrthrt ee htrhrthr",
       "rating": "5",
-      "date": "2020.05.019 18:03"
+      "date": "2020.05.19 18:03"
     },
     {
       "id": "3refft4errft54",
@@ -392,7 +501,7 @@
       "author": "Marina",
       "text": "werfeg r htyjhtyj regerg r rrrrrrrrr reg yjtyj tyjtyjh rthrthrt trhrthrth rthrth",
       "rating": "3",
-      "date": "2020.05.019 18:03"
+      "date": "2020.05.19 18:03"
     },
     {
       "id": "bn6hb43vbr5",
@@ -401,7 +510,7 @@
       "author": "Nikolay",
       "text": "erger reger regerh rgverdgerdg rge rgerdgerg r rgergerhg rgerghreg rr rherh reger",
       "rating": "4",
-      "date": "2020.05.019 18:03"
+      "date": "2020.05.19 18:03"
     },
     {
       "id": "3456yuijhbvsw3",
@@ -410,7 +519,25 @@
       "author": "Max",
       "text": "dfbgdfrg rhnrt retghber r erhber mhh ergtrefd euykykurik yujkyujkyu yujyujyu",
       "rating": "4",
-      "date": "2020.05.019 18:03"
+      "date": "2020.05.19 18:03"
+    },
+    {
+      "id": "a4b543a7-1c81-4a66-869b-1e394b1f1061",
+      "perrentId": "jknsd63498uwfhg3e87yd3",
+      "autorId": "5ae5c952-8068-4189-877f-2d448a2ca1f4",
+      "author": "Alisa",
+      "rating": "1",
+      "text": "fwsrffw werfwsef wefwef wefwfe wefwefewf wefewf",
+      "date": "2023.08.06 22:08"
+    },
+    {
+      "id": "388ab419-3834-46d0-8dac-764e9d7bf6b7",
+      "perrentId": "jknsd63498uwfhg3e87yd3",
+      "autorId": "5ae5c952-8068-4189-877f-2d448a2ca1f4",
+      "author": "Alisa",
+      "rating": "wind",
+      "text": "sregverg nmuyetbvc ftg4y5h6uj loikuj fregth5y6uj7ik juyhgt",
+      "date": "2023.08.06 22:15"
     }
   ],
   "usersList": [
@@ -419,65 +546,103 @@
       "name": "Angelina",
       "email": "Angelina@site.site",
       "avatar": "img/avatar-angelina.jpg",
-      "isPro": true
+      "isPro": true,
+      "favoritesOfferList": [
+        "jknsd63498uwfhg3e87yd3",
+        "83ihndhu21e90dskj3e",
+        "dscljk6nefcow",
+        "45ywea3r4tyh"
+      ]
     },
     {
       "id": "7fhdsg3kcnd0",
       "name": "Marina",
       "email": "Marina@site.site",
       "avatar": "img/avatar-angelina.jpg",
-      "isPro": false
+      "isPro": false,
+      "favoritesOfferList": [
+        "kk273ghdw72hd92hd720cj1cb",
+        "csjb29fhj2910vxskjn1892",
+        "6874390iodejhfuyr7438",
+        "24rftghui675"
+      ]
     },
     {
       "id": "cndf84rnc7eh4",
       "name": "Nikolay",
       "email": "Nikolay@site.site",
       "avatar": "img/avatar-max.jpg",
-      "isPro": false
+      "isPro": false,
+      "favoritesOfferList": [
+        "83ihndhu21e90dskj3e",
+        "daw34e8vyduwy2e7cwg28",
+        "dscljk6nefcow",
+        "45ywea3r4tyh"
+      ]
     },
     {
       "id": "cdhbdcuhewdwu",
       "name": "Veronika",
       "email": "Veronika@site.site",
       "avatar": "img/avatar-angelina.jpg",
-      "isPro": true
+      "isPro": true,
+      "favoritesOfferList": [
+        "jknsd63498uwfhg3e87yd3",
+        "8394ryu387yr3",
+        "hjyt654sd",
+        "24rftghui675"
+      ]
     },
     {
       "id": "sdhui4r87ydwe",
       "name": "Max",
       "email": "Max@site.site",
       "avatar": "img/avatar-max.jpg",
-      "isPro": false
+      "isPro": false,
+      "favoritesOfferList": [
+        "kk273ghdw72hd92hd720cj1cb",
+        "csjb29fhj2910vxskjn1892",
+        "6874390iodejhfuyr7438",
+        "dscljk6nefcow"
+      ]
     },
     {
       "id": "efwghtjkiujh43",
       "name": "Vadim",
       "email": "Vadim@site.site",
       "avatar": "img/avatar-angelina.jpg",
-      "isPro": false
+      "isPro": false,
+      "favoritesOfferList": [
+        "83ihndhu21e90dskj3e",
+        "8394ryu387yr3",
+        "hjyt654sd",
+        "24rftghui675"
+      ]
     },
     {
       "id": "3rfghy6543edfg",
       "name": "Alisa",
       "email": "Alisa@site.site",
       "avatar": "img/avatar-max.jpg",
-      "isPro": true
+      "isPro": true,
+      "favoritesOfferList": [
+        "jknsd63498uwfhg3e87yd3",
+        "daw34e8vyduwy2e7cwg28",
+        "45ywea3r4tyh",
+        "24rftghui675"
+      ]
     },
     {
-      "name": "Marina Starodumova",
+      "id": "5ae5c952-8068-4189-877f-2d448a2ca1f4",
+      "name": "Alisa",
       "email": "starodumovamarina5221@gmail.com",
-      "isPro": "false",
-      "avatar": "",
-      "id": "5ae5c952-8068-4189-877f-2d448a2ca1f4"
-    }
-  ],
-  "FavoritesList": [
-    {
-      "id": "starodumovamarina5221@gmail.com",
-      "offerIdList": [
-        "csjb29fhj2910vxskjn1892",
+      "avatar": "img/avatar-max.jpg",
+      "isPro": true,
+      "favoritesOfferList": [
+        "daw34e8vyduwy2e7cwg28",
+        "kk273ghdw72hd92hd720cj1cb",
         "dscljk6nefcow",
-        "24rftghui675"
+        "jknsd63498uwfhg3e87yd3"
       ]
     }
   ]

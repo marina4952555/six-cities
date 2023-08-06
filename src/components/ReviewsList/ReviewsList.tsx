@@ -1,6 +1,7 @@
 import React from 'react';
 import Review from '../Review/Review';
 import { ReviewType } from '../../types';
+import { ReviewSection, ReviewTitle, ReviewList } from './reviewList.styled';
 
 interface Props {
   currentReviewsList: ReviewType[];
@@ -8,17 +9,14 @@ interface Props {
 
 function ReviewsList({ currentReviewsList }: Props) {
   return (
-    <>
-      <h2 className='reviews__title'>
-        Reviews &middot;
-        <span className='reviews__amount'>{currentReviewsList.length}</span>
-      </h2>
-      <ul className='reviews__list'>
+    <ReviewSection>
+      <ReviewTitle>Reviews &middot; {currentReviewsList.length}</ReviewTitle>
+      <ReviewList>
         {currentReviewsList.map((review) => (
           <Review review={review} key={review.id} />
         ))}
-      </ul>
-    </>
+      </ReviewList>
+    </ReviewSection>
   );
 }
 

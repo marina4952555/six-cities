@@ -4,22 +4,22 @@ import { FavoritesSection, FavoritesUl, Text } from './favoritesList.styled';
 import FavoritesItem from '../FavoritesItem';
 
 const FavoritesList = () => {
-  const { currentUser, favoritesList, offerList } = useAppSelector((state) => ({
+  const { currentUser, offerList, userList } = useAppSelector((state) => ({
     currentUser: state.currentUser.email,
-    favoritesList: state.favorites,
     offerList: state.offer,
+    userList: state.users,
   }));
 
-  const currentFavoritesList = favoritesList.find(
-    (item) => item.id === currentUser,
-  );
+  const currentFavoritesList = userList.find(
+    (user) => user.email === currentUser,
+  )?.favoritesOfferList;
 
   if (!currentFavoritesList) {
-    return null;
+    return <Text>so far it's empty</Text>;
   }
 
   const currentOfferList = offerList.filter((offer) =>
-    currentFavoritesList.offerIdList.includes(offer.id),
+    currentFavoritesList.includes(offer.id),
   );
 
   return (
@@ -30,13 +30,11 @@ const FavoritesList = () => {
             <FavoritesItem
               key={offer.id}
               offer={offer}
-              currentFavoritesList={currentFavoritesList}
               currentUser={currentUser}
             />
           ))}
         </FavoritesUl>
       )}
-      {!currentOfferList && <Text>so far it's empty</Text>}
     </FavoritesSection>
   );
 };

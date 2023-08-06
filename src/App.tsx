@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
-import Property from './pages/Property';
+import Property from './pages/PropertyPage';
 import CityPage from './pages/CityPage';
 import AuthorizationPage from './pages/AuthorizationPage';
 import FavoritesPage from './pages/FavoritesPage';

@@ -1,136 +1,87 @@
-import React, { useState } from 'react';
+import React from 'react';
+import dayjs from 'dayjs';
+import { v4 as uuidv4 } from 'uuid';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { useAppDispatch } from '../../redux/hooks';
+import { addNewReview } from '../../redux/reviews/thunks';
+import { OfferType, UserType } from '../../types';
+import {
+  Form,
+  FormButton,
+  FormLabel,
+  FormLabelRadio,
+  FormRadio,
+  FormSection,
+  FormTextarea,
+  FormTitle,
+} from './addReviews.styled';
+import { ErrorText } from '../../App.styled';
 
-const AddReviews = () => {
-  const [reviewsText, setReviewsText] = useState('');
-  const [rating, setRating] = useState('');
+interface Props {
+  offer: OfferType;
+  currentUser: UserType;
+}
+interface IFormInputs {
+  id: string;
+  perrentId: string;
+  autorId: string;
+  author: string;
+  rating: string;
+  text: string;
+  date: string;
+}
 
-  const saveNewRewiew = (reviewsText: string, rating: string) => {
-    if (reviewsText && rating) {
-      if (reviewsText.length > 49) {
-        setReviewsText('');
-        setRating('');
-      }
-    }
+const AddReviews = ({ offer, currentUser }: Props) => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+    reset,
+  } = useForm<IFormInputs>();
+
+  const dispatch = useAppDispatch();
+
+  const onSubmit: SubmitHandler<IFormInputs> = (data) => {
+    console.log(data);
+    dispatch(
+      addNewReview({
+        id: uuidv4(),
+        perrentId: offer.id,
+        autorId: currentUser.id,
+        author: currentUser.name,
+        rating: data.rating,
+        text: data.text,
+        date: dayjs().format('YYYY.MM.DD HH:mm'),
+      }),
+    );
+    reset({
+      text: '',
+      rating: '',
+    });
   };
 
   return (
-    <form className='reviews__form form'>
-      <label className='reviews__label form__label' htmlFor='review'>
-        Your review
-      </label>
-      <div className='reviews__rating-form form__rating'>
-        <input
-          className='form__rating-input visually-hidden'
-          name='rating'
-          value='5'
-          id='5-stars'
-          type='radio'
-          onClick={(e) => setRating(e.currentTarget.value)}
-        />
-        <label
-          htmlFor='5-stars'
-          className='reviews__rating-label form__rating-label'
-          title='perfect'
-        >
-          <svg className='form__star-image' width='37' height='33'>
-            {/* <use xlink:href="#icon-star"></use> */}
-          </svg>
-        </label>
+    <FormSection>
+      <FormTitle>Add new rexiew</FormTitle>
+      <Form onSubmit={handleSubmit(onSubmit)}>
+        <FormLabelRadio>
+          rating
+          <FormRadio {...register('rating')} type='radio' value='1' />
+          <FormRadio {...register('rating')} type='radio' value='2' />
+          <FormRadio {...register('rating')} type='radio' value='3' />
+          <FormRadio {...register('rating')} type='radio' value='4' />
+          <FormRadio {...register('rating')} type='radio' value='5' />
+        </FormLabelRadio>
+        <FormLabel>
+          <FormTextarea
+            {...register('text', { required: true, minLength: 50 })}
+          />
+        </FormLabel>
+        <ErrorText>{errors.text && 'text is required'}</ErrorText>
 
-        <input
-          className='form__rating-input visually-hidden'
-          name='rating'
-          value='4'
-          id='4-stars'
-          type='radio'
-          onClick={(e) => setRating(e.currentTarget.value)}
-        />
-        <label
-          htmlFor='4-stars'
-          className='reviews__rating-label form__rating-label'
-          title='good'
-        >
-          <svg className='form__star-image' width='37' height='33'>
-            {/* <use xlink:href="#icon-star"></use> */}
-          </svg>
-        </label>
-
-        <input
-          className='form__rating-input visually-hidden'
-          name='rating'
-          value='3'
-          id='3-stars'
-          type='radio'
-          onClick={(e) => setRating(e.currentTarget.value)}
-        />
-        <label
-          htmlFor='3-stars'
-          className='reviews__rating-label form__rating-label'
-          title='not bad'
-        >
-          <svg className='form__star-image' width='37' height='33'>
-            {/* <use xlink:href="#icon-star"></use> */}
-          </svg>
-        </label>
-
-        <input
-          className='form__rating-input visually-hidden'
-          name='rating'
-          value='2'
-          id='2-stars'
-          type='radio'
-          onClick={(e) => setRating(e.currentTarget.value)}
-        />
-        <label
-          htmlFor='2-stars'
-          className='reviews__rating-label form__rating-label'
-          title='badly'
-        >
-          <svg className='form__star-image' width='37' height='33'>
-            {/* <use xlink:href="#icon-star"></use> */}
-          </svg>
-        </label>
-
-        <input
-          className='form__rating-input visually-hidden'
-          name='rating'
-          value='1'
-          id='1-star'
-          type='radio'
-          onClick={(e) => setRating(e.currentTarget.value)}
-        />
-        <label
-          htmlFor='1-star'
-          className='reviews__rating-label form__rating-label'
-          title='terribly'
-        >
-          <svg className='form__star-image' width='37' height='33'>
-            {/* <use xlink:href="#icon-star"></use> */}
-          </svg>
-        </label>
-      </div>
-      <textarea
-        className='reviews__textarea form__textarea'
-        id='review'
-        name='review'
-        placeholder='Tell how was your stay, what you like and what can be improved'
-        onChange={(e) => setReviewsText(e.target.value)}
-      ></textarea>
-      <div className='reviews__button-wrapper'>
-        <p className='reviews__help'>
-          To submit review please make sure to set{' '}
-          <span className='reviews__star'>rating</span> and describe your stay
-          with at least <b className='reviews__text-amount'>50 characters</b>.
-        </p>
-        <button
-          className='reviews__submit form__submit button'
-          type='submit'
-          onClick={() => saveNewRewiew(reviewsText, rating)}
-        >
-          Submit
-        </button>
-      </div>
-    </form>
+        <FormButton type='submit' />
+      </Form>
+    </FormSection>
   );
 };
 

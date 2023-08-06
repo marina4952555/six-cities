@@ -1,44 +1,35 @@
 import React from 'react';
-import {
-  FavoritesLi,
-  City,
-  Name,
-  Img,
-  Remove,
-  Price,
-} from './favoritesItem.styled';
-import { FavoritesListType, OfferType } from '../../types';
+import { FavoritesLi, City, Name, Img, Price } from './favoritesItem.styled';
+import { OfferType } from '../../types';
 import { useAppDispatch, useAppSelector } from '../../redux/hooks';
-import { removeFavorite } from '../../redux/favotites/thunks';
 import { Link } from 'react-router-dom';
+import RemoveFromFavorites from '../RemoveFromFavorites/RemoveFromFavorites';
 
 interface Props {
   offer: OfferType;
-  currentFavoritesList: FavoritesListType;
   currentUser: string;
 }
 
-const FavoritesItem = ({ offer, currentFavoritesList, currentUser }: Props) => {
+const FavoritesItem = ({ offer }: Props) => {
   const dispatch = useAppDispatch();
 
-  const { locationsList } = useAppSelector((state) => ({
-    locationsList: state.location,
-  }));
+  const { locationsList, userList, currentUserEmail } = useAppSelector(
+    (state) => ({
+      locationsList: state.location,
+      userList: state.users,
+      currentUserEmail: state.currentUser.email,
+    }),
+  );
 
   const currentCity = locationsList.find(
     (location) => location.id === offer.perrentId,
   );
 
-  const onClickRemoveFavorite = () => {
-    dispatch(
-      removeFavorite({
-        id: currentUser,
-        offerIdList: currentFavoritesList.offerIdList.filter(
-          (offerId) => offerId != offer.id,
-        ),
-      }),
-    );
-  };
+  const currentUser = userList.find((user) => user.email === currentUserEmail);
+
+  if (!currentUser) {
+    return <p></p>;
+  }
 
   return (
     <FavoritesLi>
@@ -54,7 +45,7 @@ const FavoritesItem = ({ offer, currentFavoritesList, currentUser }: Props) => {
         height='200'
         alt='Place image'
       />
-      <Remove onClick={onClickRemoveFavorite}>X</Remove>
+      <RemoveFromFavorites offer={offer} currentUser={currentUser} />
     </FavoritesLi>
   );
 };
