@@ -6,19 +6,13 @@ import Map from '../components/Map';
 import { useAppSelector } from '../redux/hooks';
 
 const Property = () => {
-  const {
-    currentUser,
-    usersListData,
-    locationsListData,
-    offerListData,
-    reviewsListData,
-  } = useAppSelector((state) => ({
-    currentUser: state.currentUser,
-    usersListData: state.users,
-    locationsListData: state.location,
-    offerListData: state.offer,
-    reviewsListData: state.review,
-  }));
+  const { usersListData, locationsListData, offerListData, reviewsListData } =
+    useAppSelector((state) => ({
+      usersListData: state.users,
+      locationsListData: state.location,
+      offerListData: state.offer,
+      reviewsListData: state.review,
+    }));
   const params = useParams<{ id: string }>();
 
   const offer = offerListData.find((offer) => offer.id === params.id);
@@ -131,10 +125,8 @@ const Property = () => {
             </section>
           </div>
         </div>
-        <section className='property__map map'>
-          {currentCity && <Map city={currentCity} points={offerListData} />}
-        </section>
       </section>
+      {currentCity && <Map city={currentCity} points={offerListData} />}
       <div className='container'>
         <section className='near-places places'>
           <h2 className='near-places__title'>

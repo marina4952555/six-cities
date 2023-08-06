@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import Property from './pages/Property';
-import City from './pages/City';
+import CityPage from './pages/CityPage';
 import AuthorizationPage from './pages/AuthorizationPage';
+import FavoritesPage from './pages/FavoritesPage';
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path='city/:id' element={<City />} />
+          <Route path='city/:id' element={<CityPage />} />
           <Route path='property/:id' element={<Property />} />
           <Route path='Authorization' element={<AuthorizationPage />} />
+          <Route path='favorites/:id' element={<FavoritesPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

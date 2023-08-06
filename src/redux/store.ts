@@ -4,6 +4,7 @@ import userSlice from './user/userSlice';
 import locationSlice from './location/locationSlice';
 import offerSlice from './offer/offerSlice';
 import reviewSlice from './reviews/reviewSlice';
+import FavoritesSlice from './favotites/FavoritesSlice';
 
 export const store = configureStore({
   reducer: {
@@ -12,6 +13,7 @@ export const store = configureStore({
     location: locationSlice,
     offer: offerSlice,
     review: reviewSlice,
+    favorites: FavoritesSlice,
   },
 });
 

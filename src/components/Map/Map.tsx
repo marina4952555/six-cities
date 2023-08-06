@@ -4,6 +4,7 @@ import useMap from '../../hooks/useMap';
 import { LocationType, OfferType } from '../../types';
 import { URL_MARKER_DEFAULT, URL_MARKER_CURRENT } from '../../conts';
 import 'leaflet/dist/leaflet.css';
+import { MapSection } from './map.styled';
 
 type MapProps = {
   city: LocationType;
@@ -53,7 +54,11 @@ function Map({ city, points }: MapProps) {
     }
   }, [map, points, selectedPoint]);
 
-  return <div style={{ height: '800px' }} ref={mapRef} />;
+  return (
+    <MapSection>
+      <div style={{ height: '100%', minHeight: '400px' }} ref={mapRef} />
+    </MapSection>
+  );
 }
 
 export default Map;

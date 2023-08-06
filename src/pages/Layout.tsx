@@ -25,8 +25,6 @@ const Layout = () => {
     locationsListData: state.location,
   }));
 
-  console.log(currentUser);
-
   const dispatch = useAppDispatch();
 
   useEffect(() => {
@@ -38,11 +36,11 @@ const Layout = () => {
       <Header>
         <HeaderWrapper>
           <Link to='/'>
-            <Logo src={`../img/logo.svg'`} width='81' height='41' alt='logo' />
+            <Logo src={`../img/logo.svg`} width='81' height='41' alt='logo' />
           </Link>
           {currentUser && (
             <HeaderUser>
-              <Link to='#'>{currentUser}</Link>
+              <Link to={`/favorites/${currentUser}`}>{currentUser}</Link>
               <HeaderUserButton
                 type='button'
                 onClick={() => handleChangeUser()}

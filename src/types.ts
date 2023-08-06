@@ -52,3 +52,8 @@ export type LogoType = {
   width: string;
   heaght: string;
 };
+
+export type FavoritesListType = {
+  id: string;
+  offerIdList: string[];
+};
